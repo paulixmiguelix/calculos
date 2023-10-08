@@ -8,16 +8,16 @@ Aplicação desenvolvida no âmbito da ação de formação ** Introdução do G
 ## Operações suportadas
 Neste momento esta aplicação implenta as seguintes operações:
 
- :arrow_right Soma
- :arrow_right Subtração
- :arrow_right Conversão de temperaturas e distâncias
+ - Soma
+ - Subtração
+ - Conversão de temperaturas e distâncias
 
 
 ## Tecnologias utilizadas
-   :arrow_right Visual Studio 
-   :arrow_right Git
-   :arrow_right GitHub Desktop
-   :arrow_right Plataforma GitHub
+   - Visual Studio 
+   - Git
+   - GitHub Desktop
+   - Plataforma GitHub
 
 ##Site Oficial
 [www.ferramentaseducativas.com]
