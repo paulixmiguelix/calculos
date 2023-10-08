@@ -9,7 +9,7 @@ namespace Calculos
     /// <summary>
     /// Implementa operações aritméticas
     /// </summary>
-    internal class Aritmetica
+    internal static class Aritmetica
     {
         /// <summary>
         /// Operação soma.
@@ -17,12 +17,12 @@ namespace Calculos
         /// <returns>Retorma a soma de 2 números</returns>
         
 
-        public enum ConvercaoTemperatura
+        public static enum ConvercaoTemperatura
         {
             Nulo=0, CelciusFahr,
             FahrCelcius
         }
-        public double ConverteTemperatura(ConvercaoTemperatura Conversao, double Temperatura)
+        public static double ConverteTemperatura(ConvercaoTemperatura Conversao, double Temperatura)
         {
             if (Conversao==ConvercaoTemperatura.CelciusFahr)
             {
@@ -33,7 +33,7 @@ namespace Calculos
             }
             return -1;
         }
-        public int Somar(int x, int y)
+        public static int Somar(int x, int y)
         {
             return x + y;
         }
@@ -42,7 +42,7 @@ namespace Calculos
         /// </summary>
 
         /// <returns>Retorma a diferença de 2 números</returns>
-        public int Subtrair(int x, int y)
+        public static int Subtrair(int x, int y)
         {
             return x - y;
         }
