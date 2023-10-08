@@ -15,6 +15,24 @@ namespace Calculos
         /// Operação soma.
         /// </summary>
         /// <returns>Retorma a soma de 2 números</returns>
+        
+
+        public enum ConvercaoTemperatura
+        {
+            Nulo=0, CelciusFahr,
+            FahrCelcius
+        }
+        public double ConverteTemperatura(ConvercaoTemperatura Conversao, double Temperatura)
+        {
+            if (Conversao==ConvercaoTemperatura.CelciusFahr)
+            {
+                return (Temperatura*1.80000+32);
+            }else if (Conversao==ConvercaoTemperatura.FahrCelcius)
+            {
+                return ((Temperatura - 32 )/ 1.8000);
+            }
+            return -1;
+        }
         public int Somar(int x, int y)
         {
             return x + y;
