@@ -16,8 +16,30 @@ namespace Calculos
             Nulo = 0, CelciusFahr,
             FahrCelcius
         }
+        /// <summary>
+        /// Conversao de temperaturas
+        /// </summary>
+        public enum ConvercaoDistancias
+        {
+            Nulo = 0, MetrosMilhas,
+            MilhasMetros
+        }
 
-        public static double ConverteTemperatura(ConvercaoTemperatura Conversao, double Temperatura)
+        public static double ConverteDistancias(ConvercaoDistancias Conversao, double Distancia)
+        {
+            if (Conversao == ConvercaoDistancias.MilhasMetros)
+            {
+                return (Distancia * 0.00006213712);
+            }
+            else if (Conversao == ConvercaoDistancias.MetrosMilhas)
+            {
+                return Distancia* 1609.344;
+            }
+            return -1;
+        }
+
+
+            public static double ConverteTemperatura(ConvercaoTemperatura Conversao, double Temperatura)
         {
             if (Conversao == ConvercaoTemperatura.CelciusFahr)
             {
